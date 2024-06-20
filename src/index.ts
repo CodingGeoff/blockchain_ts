@@ -1,4 +1,4 @@
-import { newBlockChain } from './blockChain'
+import { newBlockChain } from './blockChain';
 
 const blockchain = newBlockChain();
 blockchain.printChain();

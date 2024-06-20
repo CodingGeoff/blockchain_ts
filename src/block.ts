@@ -1,4 +1,4 @@
-import * as crypto from "crypto";
+import * as crypto from 'crypto';
 
 // type BlockStruct = {
 //   prevHash: Buffer;
@@ -18,7 +18,7 @@ class Block {
   }
 
   calculateHash(): Buffer {
-    const hash = crypto.createHash("sha256");
+    const hash = crypto.createHash('sha256');
     // const blockByteInfo = Buffer.concat([this.prevHash, this.data])
     hash.update(this.prevHash);
     hash.update(this.data);
@@ -26,6 +26,4 @@ class Block {
   }
 }
 
-export {
-  Block
-}
+export { Block };

@@ -1,7 +1,7 @@
-import { Block } from "./block";
+import { Block } from './block';
 
 const genesisInfo =
-  "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks";
+  'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks';
 
 class BlockChain {
   public blocks: Block[];
@@ -19,8 +19,8 @@ class BlockChain {
   printChain() {
     this.blocks.forEach((block, index) => {
       console.log(`======== block height : ${index} =======`);
-      console.log(`PrevHash : ${block.prevHash.toString("hex")}`);
-      console.log(`Hash : ${block.hash?.toString("hex")}`);
+      console.log(`PrevHash : ${block.prevHash.toString('hex')}`);
+      console.log(`Hash : ${block.hash?.toString('hex')}`);
       console.log(`Data : ${block.data.toString()}`);
     });
   }
@@ -33,6 +33,4 @@ function newBlockChain(): BlockChain {
   return blockchain;
 }
 
-export {
-  newBlockChain,
-}
+export { newBlockChain };
