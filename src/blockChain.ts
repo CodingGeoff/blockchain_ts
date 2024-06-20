@@ -35,5 +35,4 @@ function newBlockChain(): BlockChain {
 
 export {
   newBlockChain,
-  BlockChain
 }
